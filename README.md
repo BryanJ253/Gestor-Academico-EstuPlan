@@ -1,9 +1,9 @@
 # Gestor-Academico-EstuPlan
 En este repositorio se publica el proyecto para el curso de Programación De Computadores, el cual consiste en un Gestor Academico dirigido a los estudiantes de la Universidad Nacional de la Facultade de Ingenieria. Es una aplicacion de escritorio que ayuda a gestionar la vida universitaria del estudiante, compilando distintas herramientas para que sean de facil acceso para el estudiandete e implementando apis de Google Calendar y Google Classroom para gestionar tareas horarios entre otras cosas.
 ## Requerimientos 
-. Instalación del entorno
+## 1.Instalación del entorno
 A continuación, se describen los pasos para instalar y ejecutar la aplicación en un entorno local utilizando Python.
-4.1 Descarga del proyecto
+### 1.1 Descarga del proyecto
 Descargue o copie el proyecto en una carpeta de su preferencia, por ejemplo:
 
 
@@ -28,7 +28,7 @@ google_classroom.py
 otros archivos auxiliares, imágenes, etc.
 
 
-4.2 Instalación de Python
+### 1.2 Instalación de Python
 Descargue Python desde la página oficial:
 
 
@@ -53,9 +53,9 @@ python --version
 
 Debería mostrar una versión igual o superior a 3.10.
 
-5. Creación de entorno virtual e instalación de dependencias
+## 2. Creación de entorno virtual e instalación de dependencias
 Es recomendable usar un entorno virtual para aislar las dependencias del proyecto.
-5.1 Creación del entorno virtual (Windows)
+### 2.1 Creación del entorno virtual (Windows)
 Abra PowerShell o CMD en la carpeta del proyecto [Gestor Academico].
 
 
@@ -72,7 +72,7 @@ Active el entorno virtual:
 Si tiene problemas de ejecución de scripts en PowerShell, puede que necesite modificar la política de ejecución.
 
 
-5.2 Instalación de librerías necesarias (pip)
+### 2.2 Instalación de librerías necesarias (pip)
 Con el entorno virtual activado, instale las librerías utilizadas por el proyecto.
 Para ejecutar la app con los avances del classroom es necesario instalar el pillow con este comando:
 pip install pillow
@@ -93,9 +93,9 @@ py -3.14 -m pip install firebase-admin
 
 
 
-6. Librerías utilizadas y su función
+## 3. Librerías utilizadas y su función
 A continuación se listan las librerías principales utilizadas en la aplicación y su propósito:
-6.1 Librerías estándar de Python
+### 3.1 Librerías estándar de Python
 tkinter y ttk
  Permiten crear la interfaz gráfica de usuario: ventanas, botones, etiquetas, menús, etc.
 
@@ -120,7 +120,7 @@ webbrowser
  Abre enlaces en el navegador web predeterminado (por ejemplo, para abrir páginas de Google Classroom o ayuda externa).
 
 
-6.2 Librerías externas (instaladas con pip)
+### 3.2 Librerías externas (instaladas con pip)
 Pillow (PIL)
  Manejo de imágenes (por ejemplo, iconos, logos de la app, etc.).
 
@@ -136,9 +136,9 @@ googleapiclient.discovery.build para crear servicios de API (Google Calendar, Go
 
 
 
-7. Configuración de credenciales de Google
+## 4. Configuración de credenciales de Google
 Para permitir que la aplicación acceda a Google Calendar y Google Classroom, es necesario contar con un archivo de credenciales y autorizar la aplicación en la cuenta de Google del usuario.
-7.1 Obtención del archivo credentials.json
+### 4.1 Obtención del archivo credentials.json
 Ingrese a Google Cloud Console:
 
 
@@ -167,7 +167,7 @@ Descargue el archivo de credenciales (credentials.json).
 Coloque el archivo credentials.json en la carpeta principal del proyecto  o en la ruta esperada por tu código (ejemplo: mismo directorio donde se encuentra inicio_app.py).
 
 
-7.2 Archivos token.json
+### 4.2 Archivos token.json
 La primera vez que se ejecute la aplicación y se intente acceder a Google, se abrirá una ventana en el navegador pidiendo permiso de acceso.
 
 
